@@ -38,5 +38,23 @@ namespace PizzaApp.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        public IActionResult SeeUsers()
+        {
+            // Assuming you have a list of users in your system
+            var users = new List<User>
+        {
+            new User { FirstName = "John", LastName = "Doe" },
+            new User { FirstName = "Jane", LastName = "Smith" },
+            // Add more users here...
+        };
+
+            // Assuming UserViewModel contains FullName property
+            var userViewModels = users.Select(user => new UserViewModel
+            {
+                FullName = $"{user.FirstName} {user.LastName}"
+            }).ToList();
+
+            return View(userViewModels);
+        }
     }
 }

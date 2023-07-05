@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO\\Desktop\\mkwd11-net-08-aspnetmvc\\G1\\Class02\\SEDC.PizzaApp\\PizzaApp\\PizzaApp.csproj": {}
+    "C:\\Users\\LENOVO\\Desktop\\MVC_HomeworkRepo_Marija\\SEDC.PizzaApp\\PizzaApp\\PizzaApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO\\Desktop\\mkwd11-net-08-aspnetmvc\\G1\\Class02\\SEDC.PizzaApp\\PizzaApp\\PizzaApp.csproj": {
+    "C:\\Users\\LENOVO\\Desktop\\MVC_HomeworkRepo_Marija\\SEDC.PizzaApp\\PizzaApp\\PizzaApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\mkwd11-net-08-aspnetmvc\\G1\\Class02\\SEDC.PizzaApp\\PizzaApp\\PizzaApp.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\MVC_HomeworkRepo_Marija\\SEDC.PizzaApp\\PizzaApp\\PizzaApp.csproj",
         "projectName": "PizzaApp",
-        "projectPath": "C:\\Users\\LENOVO\\Desktop\\mkwd11-net-08-aspnetmvc\\G1\\Class02\\SEDC.PizzaApp\\PizzaApp\\PizzaApp.csproj",
+        "projectPath": "C:\\Users\\LENOVO\\Desktop\\MVC_HomeworkRepo_Marija\\SEDC.PizzaApp\\PizzaApp\\PizzaApp.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\Desktop\\mkwd11-net-08-aspnetmvc\\G1\\Class02\\SEDC.PizzaApp\\PizzaApp\\obj\\",
+        "outputPath": "C:\\Users\\LENOVO\\Desktop\\MVC_HomeworkRepo_Marija\\SEDC.PizzaApp\\PizzaApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

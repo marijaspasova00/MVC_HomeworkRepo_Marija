@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QB0JqTPRjnsr/6P4X1GkwheBgOLxWQwIjRfthVAjlXpmzJXSqGc2htpJYPigCZgdwHBSu35U6pL0bDmM/CN9Fg==",
+  "dgSpecHash": "wgdOoUU+G7OArZ8KMj13Rc0fmLstCxesIuBKxOpSRuus2KkymxEu3t9j2U0DBGuDQnJvzoltyXtbmW7sG5c8kg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\mkwd11-net-08-aspnetmvc\\G1\\Class02\\SEDC.PizzaApp\\PizzaApp\\PizzaApp.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\MVC_HomeworkRepo_Marija\\SEDC.PizzaApp\\PizzaApp\\PizzaApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.19\\microsoft.windowsdesktop.app.ref.6.0.19.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.19\\microsoft.netcore.app.ref.6.0.19.nupkg.sha512",

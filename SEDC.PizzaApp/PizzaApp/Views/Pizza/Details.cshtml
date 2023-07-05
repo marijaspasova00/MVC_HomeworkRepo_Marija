@@ -1,0 +1,17 @@
+﻿@model PizzaViewModel
+
+<h2>@Model.Name</h2>
+<h4>@Model.PizzaSize.ToString()</h4>
+<p>Price: $@Model.Price</p>
+
+@if (Model.IsOnPromotion)
+{
+    <h4>This pizza is on promotion!</h4>
+}
+else
+{
+    <h4>This pizza is not on promotion.</h4>
+}
+
+@Html.Partial("_PizzaDetailsPartial", Model)
+

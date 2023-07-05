@@ -23,3 +23,10 @@
         </div>
     }
 </div>
+<h1>Pizza Menu</h1>
+
+@foreach (var pizza in Model)
+{
+    @Html.Partial("_PizzaDetailsPartial", pizza)
+    <hr />
+}
