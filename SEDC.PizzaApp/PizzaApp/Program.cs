@@ -10,11 +10,25 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+
 app.UseStaticFiles();
 
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "ListOrders",
+    pattern: "ListOrders",
+    defaults: new { controller = "Order", action = "Index" });
+
+app.MapControllerRoute(
+    name: "Details",
+    pattern: "{controller=Order}/{action=Details}/{id?}");
+
+app.MapControllerRoute(
+    name: "JsonData",
+    pattern: "{controller=Order}/{action=JsonData}");
 
 app.MapControllerRoute(
     name: "default",

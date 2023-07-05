@@ -1,36 +1,42 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PizzaApp.Models.Domain;
-using PizzaApp.Models.Mappers;
-using PizzaApp.Models.ViewModels.PizzaViewModels;
+using PizzaApp.Mappers;
+using PizzaApp.Models;
+using PizzaApp.Models.Enums;
 
 namespace PizzaApp.Controllers
 {
     public class PizzaController : Controller
     {
+
+        private static List<Pizza> pizzas = new List<Pizza>
+    {
+        new Pizza { Id = 1, Name = "Margherita", Price = 12.99m, PizzaSize = PizzaSize.Normal, HasExtras = false },
+        new Pizza { Id = 2, Name = "Pepperoni", Price = 14.99m, PizzaSize = PizzaSize.Normal, HasExtras = true },
+        new Pizza { Id = 3, Name = "Supreme", Price = 17.99m, PizzaSize = PizzaSize.Family, HasExtras = false },
+        // Add more pizzas here...
+    };
+
         public IActionResult Index()
         {
-            List<Pizza> pizzas = StaticDb.Pizzas;
-            List<PizzaListViewModel> pizzaList = pizzas.Select(x => x.MapFromPizzaToPizzaListViewModel()).ToList();
-            return View(pizzaList);
+            // Map the list of pizzas to view models
+            var pizzaViewModels = pizzas.Select(pizza => pizza.ToViewModel()).ToList();
+
+            return View(pizzaViewModels);
         }
 
-        public IActionResult Details(int? id)
+        public IActionResult Details(int id)
         {
-            if (id == null)
+            // Find the pizza in the static list by the given id
+            var pizza = pizzas.FirstOrDefault(p => p.Id == id);
+
+            if (pizza == null)
             {
-                return RedirectToAction("Error", "Home");
+                return new EmptyResult();
             }
 
-            Pizza pizzaDb = StaticDb.Pizzas.FirstOrDefault(x => x.Id == id);
-
-            if (pizzaDb == null)
-            {
-                return RedirectToAction("Error", "Home");
-            }
-
-            PizzaDetailsViewModel pizzaDetails = pizzaDb.MapFromPizzaToPizzaDetailsViewModel();
-
-            return View(pizzaDetails);
+            // Map the pizza to view model and pass it to the view
+            var pizzaViewModel = pizza.ToViewModel();
+            return View(pizzaViewModel);
         }
     }
 }
